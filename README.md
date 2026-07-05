@@ -38,16 +38,17 @@ https://rahulshettyacademy.com/maps/api
 ## Структура проекта
 
 ```text
+├── allure-results           # результаты выполнения тестов для Allure
 ├── api/
 │   ├── base_api.py          # базовый HTTP-клиент
 │   └── location_api.py      # методы API для работы с локациями
 ├── data/
 │   └── location_data.py     # тестовые данные
+├── logs                     # логи выполнения автотестов
 ├── models/
 │   └── location.py          # Pydantic-модели запросов и ответов
 ├── tests/
-│   ├── test_location.py     # API-автотесты
-│   └── allure-results/      # результаты выполнения тестов для Allure
+│   └── test_location.py     # API-автотесты
 ├── attach.py                # вложения request/response для Allure
 ├── config.py                # базовый URL и API-ключ
 ├── conftest.py              # pytest-фикстуры и настройка логирования
