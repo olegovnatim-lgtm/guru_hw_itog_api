@@ -56,7 +56,6 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -216,3 +215,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# IDE
+.idea/
+.vscode/
+
+# Allure
+allure-results/
+allure-report/
+tests/allure-results/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
