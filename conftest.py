@@ -27,11 +27,13 @@ def pytest_configure(config):
         force=True,
     )
 
+
 @pytest.fixture()
 def base_api():
     api = BaseApi(base_url=API_BASE_URL)
     yield api
     api.session.close()
+
 
 @pytest.fixture()
 def location_api(base_api):
